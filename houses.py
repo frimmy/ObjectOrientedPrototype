@@ -12,7 +12,7 @@ class House(object):
 			
 
 	def add_room(self):
-		if self.name = 'mansion':
+		if self.name == 'mansion':
 			self.rooms+=1
 
 class Mansion(House):

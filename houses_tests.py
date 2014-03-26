@@ -17,8 +17,8 @@ class TestForHouse(unittest.TestCase):
 		for i in self.buildings:
 			i.add_room()
 
-			if i.name = 'mansion':
-				self.assertEqual(i.rooms, 3)
+			if i.name == 'mansion':
+				self.assertEqual(i.rooms, 7)
 			else:
 				self.assertLessEqual(i.rooms, 2)
 
