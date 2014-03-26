@@ -7,12 +7,20 @@ class TestForHouse(unittest.TestCase):
 		self.house = House()
 		self.mansion = Mansion()
 		self.cottage = Cottage()
+		self.buildings = [self.house, self.mansion, self.cottage]
 
-	def house_class_was_built_test(self):
-		self.assertTrue(self.house.is_built)
+	def classes_was_built_test(self):
+		for i in buildings:
+			self.assertTrue(i.is_built)
 
-	def mansion_class_exists_test(self):
-		self.assertTrue(self.mansion.is_built)
+	def add_rooms_test(self):
+		for i in buildings:
+			i.add_room()
 
-	def cottage_class_exists_test(self):
-		self.assertTrue(self.cottage.is_built)
+			self.assertEqual(i.rooms, 3)
+
+	def rename_mansion_class_test(self):
+		self.assertEqual(self.mansion.name, 'Mansion')	
+
+	def rename_cottage_class_test(self):
+		self.assertEqual(self.cottage.name, 'Cottage')

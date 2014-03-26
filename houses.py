@@ -1,14 +1,34 @@
 class House(object):
 
+	is_built = True
+	rooms = 2
+	front_yard = True
+	back_yard = True
+	name = 'house'		
+
 	def __init__(self):
-		print "Hammer hammer, nail, nail, you'll have you a home!"
+		if self.is_built:
+			print "Hammer hammer, nail, nail, you'll have you a",self.name,"!"
+			
 
-		self.is_built = True
-
-
+	def add_room(self):
+		self.rooms+=1
 
 class Mansion(House):
-	pass
+	def __init__(self):
+		self.name = 'Mansion'
+		super(Mansion, self).__init__()
 
 class Cottage(House):
-	pass
+	def __init__(self):
+		self.name = 'Cottage'
+		super(Cottage, self).__init__()
+
+
+my_house = House()
+my_mansion = Mansion()
+my_cottage = Cottage()
+
+print my_house.is_built
+print my_mansion.is_built
+print my_cottage.is_built
