@@ -16,14 +16,28 @@ class TestForHouse(unittest.TestCase):
 	def add_rooms_test(self):
 		for i in self.buildings:
 
-			if i.name == 'mansion':
+			if i.name != 'cottage':
 				i.add_room()
-				self.assertEqual(i.rooms, 7)
+
+				if i.name == 'house':
+					self.assertEqual(i.rooms, 3)
+				else:
+					self.assertEqual(i.rooms, 7)
+							
 			else:
-				self.assertRaises(Exception, i.add_room) 
+				self.assertRaises(Exception, i.add_room)
+
+	def max_rooms_test(self):
+		
+		for i in self.buildings:
+			while i.rooms < i.max_rooms:
+				i.add_room()
+			self.assertRaises(Exception, i.add_room)
+
 
 	def rename_mansion_class_test(self):
 		self.assertEqual(self.mansion.name, 'mansion')	
 
 	def rename_cottage_class_test(self):
 		self.assertEqual(self.cottage.name, 'cottage')
+

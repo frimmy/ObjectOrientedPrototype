@@ -1,10 +1,10 @@
- ☐ You should end up with at least two classes.
- ☐ Each class should have a few attributes, as appropriate for the scenario you’re modeling.
- ☐ Each class should have at least one method that models processes or actions that are appropriate for your class.
- ☐ If inheritance makes sense for your scenario, use it.
- ☐ You should have some simple code that calls the classes and does something (e.g., buying something, creating a project, adding tasks, etc.) and prints and output.
- ☐ Test drive the development of your code. 
-   ☐ Start with code that calls your classes, then write tests to ensure calls to the classes give the expected responses, and finally, write the classes. 
-   ☐ Do this one step at a time. Write one test, then make it pass, then add another test. 
-   ☐ Make sure to write at least one or two tests for edge cases (e.g., entering a task with no description, or a purchase for $0). You’ll want to use exceptions to handle such cases and your test should verify that these cases raise exceptions.
- ☐ Make sure to use version control, and share a link to your code with your mentor and fellow students.
+ ✔ You should end up with at least two classes. @done (14-03-26 01:02)
+ ✔ Each class should have a few attributes, as appropriate for the scenario you’re modeling. @done (14-03-26 02:48)
+ ✔ Each class should have at least one method that models processes or actions that are appropriate for your class. @done (14-03-26 03:01)
+ ✔ If inheritance makes sense for your scenario, use it. @done (14-03-26 02:47)
+ ✔ You should have some simple code that calls the classes and does something (e.g., buying something, creating a project, adding tasks, etc.) and prints and output. @done (14-03-26 03:01)
+ ✔ Test drive the development of your code. @done (14-03-26 05:18)
+   ✔ Start with code that calls your classes, then write tests to ensure calls to the classes give the expected responses, and finally, write the classes. @done (14-03-26 01:02)
+   ✔ Do this one step at a time. Write one test, then make it pass, then add another test. @done (14-03-26 03:01)
+   ✔ Make sure to write at least one or two tests for edge cases (e.g., entering a task with no description, or a purchase for $0). You’ll want to use exceptions to handle such cases and your test should verify that these cases raise exceptions. @done (14-03-26 05:02)
+ ✔ Make sure to use version control, and share a link to your code with your mentor and fellow students. @done (14-03-26 01:03)

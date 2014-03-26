@@ -1,7 +1,9 @@
 class House(object):
 
+	INFO = dict()
 	is_built = True
 	rooms = 2
+	max_rooms = 4
 	front_yard = True
 	back_yard = True
 	name = 'house'		
@@ -9,22 +11,38 @@ class House(object):
 	def __init__(self):
 		if self.is_built:
 			print "Hammer hammer, nail, nail, you'll have you a",self.name,"!"
-			
+			print "Your",self.name,"also has",self.rooms,"room(s)!"
+
+		if self.front_yard and self.back_yard:
+			print "Your",self.name,"also has a front and back yard! Welcome to the neighborhood!"
 
 	def add_room(self):
-		if self.name == 'mansion':
-			self.rooms+=1
+			if self.rooms < self.max_rooms:
+				self.rooms+=1
+			else:
+				raise Exception("this "+ self.name + " can't add any additional rooms!")
+	
+	def describe_my_house(self):
+		pass
 
 class Mansion(House):
 	def __init__(self):
 		self.name = 'mansion'
+		self.max_rooms = 35
 		self.rooms = 6
+		self.tennis_court = True
+		self.swimming_pool = True
 		super(Mansion, self).__init__()
+
+	def function():
+		pass
+	
 
 class Cottage(House):
 	def __init__(self):
 		self.name = 'cottage'
 		self.rooms = 1
+		self.max_rooms = 1	
 		super(Cottage, self).__init__()
 
 
