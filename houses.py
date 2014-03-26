@@ -16,12 +16,12 @@ class House(object):
 
 class Mansion(House):
 	def __init__(self):
-		self.name = 'Mansion'
+		self.name = 'mansion'
 		super(Mansion, self).__init__()
 
 class Cottage(House):
 	def __init__(self):
-		self.name = 'Cottage'
+		self.name = 'cottage'
 		super(Cottage, self).__init__()
 
 

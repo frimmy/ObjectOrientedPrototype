@@ -20,7 +20,7 @@ class TestForHouse(unittest.TestCase):
 			self.assertEqual(i.rooms, 3)
 
 	def rename_mansion_class_test(self):
-		self.assertEqual(self.mansion.name, 'Mansion')	
+		self.assertEqual(self.mansion.name, 'mansion')	
 
 	def rename_cottage_class_test(self):
-		self.assertEqual(self.cottage.name, 'Cottage')
+		self.assertEqual(self.cottage.name, 'cottage')
