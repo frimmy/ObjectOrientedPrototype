@@ -12,16 +12,19 @@ class House(object):
 			
 
 	def add_room(self):
-		self.rooms+=1
+		if self.name = 'mansion':
+			self.rooms+=1
 
 class Mansion(House):
 	def __init__(self):
 		self.name = 'mansion'
+		self.rooms = 6
 		super(Mansion, self).__init__()
 
 class Cottage(House):
 	def __init__(self):
 		self.name = 'cottage'
+		self.rooms = 1
 		super(Cottage, self).__init__()
 
 
