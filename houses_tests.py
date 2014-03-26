@@ -10,11 +10,11 @@ class TestForHouse(unittest.TestCase):
 		self.buildings = [self.house, self.mansion, self.cottage]
 
 	def classes_was_built_test(self):
-		for i in buildings:
+		for i in self.buildings:
 			self.assertTrue(i.is_built)
 
 	def add_rooms_test(self):
-		for i in buildings:
+		for i in self.buildings:
 			i.add_room()
 
 			self.assertEqual(i.rooms, 3)
